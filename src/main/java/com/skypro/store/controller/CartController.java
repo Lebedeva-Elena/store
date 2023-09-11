@@ -18,7 +18,7 @@ public class CartController {
     }
 
     @GetMapping("/add")
-    public String add(RequestParam List<Long> items) {
+    public String add(@RequestParam List<Long> items) {
         cartService.add(items);
         return "Товары добавлены";
 
